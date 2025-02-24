@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ item.name }}</title>
+    <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
-    <h1>Тестим</h1>
+    <h1>{{ item.name }}</h1>
+    <p>{{ item.description }}</p>
+    <p>Price: ${{ item.price }}</p>
+    <button id="buy-button">Buy</button>
 </body>
 </html>
