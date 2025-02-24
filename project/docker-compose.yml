@@ -6,4 +6,3 @@ services:
     environment:
       - STRIPE_PUBLIC_KEY=your_key
       - STRIPE_SECRET_KEY=your_key
-      - DJANGO_SECRET_KEY=your_key
