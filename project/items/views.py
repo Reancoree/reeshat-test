@@ -22,7 +22,7 @@ def create_session(request, id):
         payment_method_types=['card'],
         line_items=[{
             'price_data': {
-                'currency': 'usd',
+                'currency': item.currency,
                 'product_data': {'name': item.name},
                 'unit_amount': int(item.price * 100),
             },
