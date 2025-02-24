@@ -6,7 +6,7 @@ from project import settings
 
 def item_detail(request, id):
     item = get_object_or_404(Item, id=id)
-    return render(request, 'item_detail.html', {
+    return render(request, 'shop/item_detail.html', {
         'item': item,
         'stripe_public_key': settings.STRIPE_PUBLIC_KEY
     })
