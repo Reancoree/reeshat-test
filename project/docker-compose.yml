@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - STRIPE_PUBLIC_KEY=your_key
+      - STRIPE_SECRET_KEY=your_key
+      - DJANGO_SECRET_KEY=your_key
