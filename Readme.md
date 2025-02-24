@@ -28,7 +28,11 @@ STRIPE_SECRET_KEY=your_secret_key
 4. Запустите с docker:
 
 Укажите переменные в docker-compose.yml
-
+```
+environment:
+- STRIPE_PUBLIC_KEY=your_key
+- STRIPE_SECRET_KEY=your_key
+```
 Запустите
 ```bash
 docker-compose up --build
